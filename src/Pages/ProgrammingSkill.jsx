@@ -67,12 +67,6 @@ function ProgrammingSkill() {
         <p>🔻Investing</p>
         <p>🔻Short-Medium term forex analysis</p>
       </SkillContainer1>
-      {/* <Typed
-        strings={['🍏 🍎 🍐 🍊 🍋 🍌 🍉 🍇 🍓 🫐 🍈 🍒 🍑 🥭']}
-        typeSpeed={30}
-        backSpeed={30}
-        loop={true}
-      /> */}
     </PageLayout>
   );
 }

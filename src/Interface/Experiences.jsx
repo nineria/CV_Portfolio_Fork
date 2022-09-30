@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-// ` `
 
 export const ExpContainer = styled.div`
   height: 1800px;

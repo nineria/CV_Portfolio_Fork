@@ -9,7 +9,6 @@ import {
 import '../style.css';
 
 import { motion } from 'framer-motion';
-// import Typed from 'react-typed';
 function HomePage() {
   return (
     <HeaderContainer>
@@ -23,7 +22,6 @@ function HomePage() {
         </motion.h1>
       </Container2>
       <Container2>
-        {/* <h1 >Hi! I'm Pankorn Front-end Developer🌻 </h1> */}
         <motion.h1
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -31,16 +29,6 @@ function HomePage() {
         >
           Hello There! I'm Pankorn Front-end Developer🌻
         </motion.h1>
-
-        {/* <Typed
-          strings={[
-            'Front-End Developer, Day Trader, Reader and Listener.',
-            'Looking For Internship in Front-end position.',
-          ]}
-          typeSpeed={50}
-          backSpeed={50}
-          loop={true}
-        /> */}
       </Container2>
       <Container3
         as={motion.div}

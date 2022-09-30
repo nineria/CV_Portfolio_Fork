@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-// ` `
-// background: linear-gradient(to left, #ee9ca7, #ffdde1);
-// background-image: url("bg1.png");
+
 export const HeaderContainer = styled.div`
   min-height: 1000px;
   max-width: 1640px;

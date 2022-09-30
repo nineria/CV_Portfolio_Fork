@@ -1,4 +1,3 @@
-// import styled from "styled-components";
 import { PageLayout } from '../Interface/ProgrammingSkill';
 
 function Showcase() {

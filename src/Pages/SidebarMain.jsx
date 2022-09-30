@@ -1,8 +1,5 @@
-// import styled from "styled-components"
-import '../style.css';
-// import { motion } from "framer-motion";
-// import { Switch, Route } from 'react-router-dom';
 import { Link, useNavigate } from 'react-router-dom';
+import '../style.css';
 
 import {
   Logo,
@@ -77,17 +74,6 @@ function SidebarMain() {
         </Sidebar_li>
         {/* Space */}
       </Sidebar_ul>
-      {/* <Profile_content>
-                <Profile>
-                    <Profile_details>
-                        <img className='imgs' src="https://cdn.oneesports.co.th/cdn-data/sites/3/2022/03/Valorant_RetakeEpisode2CinematicViperScreenshot-1024x576-2.jpg" alt="" />
-                        <name_job>
-                            <Name>Looking for internship</Name>
-                            <Job>Front-End Developer.</Job>
-                        </name_job>
-                    </Profile_details>
-                </Profile>
-            </Profile_content> */}
     </Sidebar>
   );
 }
