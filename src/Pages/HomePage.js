@@ -9,7 +9,7 @@ import {
 import '../style.css';
 
 import { motion } from 'framer-motion';
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 function HomePage() {
   return (
     <HeaderContainer>
@@ -32,7 +32,7 @@ function HomePage() {
           Hello There! I'm Pankorn Front-end Developer🌻
         </motion.h1>
 
-        <Typed
+        {/* <Typed
           strings={[
             'Front-End Developer, Day Trader, Reader and Listener.',
             'Looking For Internship in Front-end position.',
@@ -40,7 +40,7 @@ function HomePage() {
           typeSpeed={50}
           backSpeed={50}
           loop={true}
-        />
+        /> */}
       </Container2>
       <Container3
         as={motion.div}
