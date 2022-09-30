@@ -29,11 +29,11 @@ function App() {
   return (
     <Div>
       <SidebarMain />
-      <Routes path='/'>
-        <Route index element={<HomePage />} />
-        <Route path='/programmingskill' element={<ProgrammingSkill />} />
-        <Route path='/experiences' element={<Experiences />} />
-        <Route path='/showcase' element={<Showcase />} />
+      <Routes>
+        <Route exact path='/' element={<HomePage />} />
+        <Route exact path='/programmingskill' element={<ProgrammingSkill />} />
+        <Route exact path='/experiences' element={<Experiences />} />
+        <Route exact path='/showcase' element={<Showcase />} />
       </Routes>
       {/* <HeaderContainer>
         <Container1>
