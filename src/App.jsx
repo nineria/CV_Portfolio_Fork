@@ -2,8 +2,13 @@ import styled from 'styled-components';
 import './style.css';
 // import { motion } from "framer-motion";
 // import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import { Route, Routes } from 'react-router-dom';
+import {
+  Route,
+  Routes,
+  unstable_HistoryRouter as HistoryRouter,
+} from 'react-router-dom';
 
+import { createBrowserHistory } from 'history';
 import Experiences from './Pages/Experiences';
 import HomePage from './Pages/HomePage';
 import ProgrammingSkill from './Pages/ProgrammingSkill';
@@ -25,16 +30,24 @@ const Div = styled.div`
   display: flex;
 `;
 
+let history = createBrowserHistory();
+
 function App() {
   return (
     <Div>
-      <SidebarMain />
-      <Routes>
-        <Route exact path='/' element={<HomePage />} />
-        <Route exact path='/programmingskill' element={<ProgrammingSkill />} />
-        <Route exact path='/experiences' element={<Experiences />} />
-        <Route exact path='/showcase' element={<Showcase />} />
-      </Routes>
+      <HistoryRouter history={history}>
+        <SidebarMain />
+        <Routes>
+          <Route exact path='/' element={<HomePage />} />
+          <Route
+            exact
+            path='/programmingskill'
+            element={<ProgrammingSkill />}
+          />
+          <Route exact path='/experiences' element={<Experiences />} />
+          <Route exact path='/showcase' element={<Showcase />} />
+        </Routes>
+      </HistoryRouter>
       {/* <HeaderContainer>
         <Container1>
           <p>Welcome to my Portfolio</p>
